@@ -1,0 +1,22 @@
+{
+    "name": "crypt0h3nk/oc-hydroraindropdemo-theme",
+    "type": "october-theme",
+    "description": "Hydro Raindrop Demo Theme",
+    "keywords": ["october", "cms", "demo", "theme", "hydro", "raindrop"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Crypto Henk",
+            "email": "crypt0h3nk@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

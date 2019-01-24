@@ -1,0 +1,21 @@
+title = "Login"
+url = "/login"
+layout = "default"
+is_hidden = 0
+
+[account]
+redirect = "home"
+paramCode = "code"
+redirect = "demo/ajax"
+forceSecure = 1
+==
+<div class="jumbotron">
+    <div class="container">
+        <h1>{{ this.page.title }}</h1>
+        <p>On this page users can sign in or register for an account.</p>
+    </div>
+</div>
+
+<div class="container">
+    {% component 'account' %}
+</div>
