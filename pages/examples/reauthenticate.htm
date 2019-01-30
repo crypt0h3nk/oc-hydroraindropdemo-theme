@@ -1,0 +1,20 @@
+title = "Example Reauthenticate"
+url = "/examples/reauthenticate"
+layout = "default"
+
+[session]
+security=user
+redirect=login
+
+[hydroCommunityHydroReauthenticate]
+==
+{% component 'hydroCommunityHydroReauthenticate' %}
+<div class="jumbotron">
+    <div class="container">
+        <h1>Reauthenticate</h1>
+        <p>Re-authentication is the process of re-authenticating an already logged in user for increase security.</p>
+    </div>
+</div>
+<div class="container">
+    <p>This text can only be shown to users which have performed Multi Factor Authentication.</p>
+</div>
