@@ -14,6 +14,7 @@
             <ul class="nav navbar-nav">
                 <li class="separator hidden-xs"></li>
                 <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
+                <li class="{% if this.page.id == 'examples-reauthenticate' %}active{% endif %}"><a href="{{ 'examples/reauthenticate'|page }}">Re-authenticate</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if user %}
