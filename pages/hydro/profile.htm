@@ -23,13 +23,15 @@ is_hidden = 0
                     <td>{{ user.meta.hydro_id|default('-') }}</td>
                 </div>
             </div>
-            <div class="form-group">
-                {% if user.meta.is_mfa_enabled %}
-                    <a href="/hydro-raindrop/disable" onclick="return confirm('Are you sure?')">Disable Multi Factor Authentication</a>
-                {% else %}
-                    <a href="/hydro-raindrop/enable">Enable Multi Factor Authentication</a>
-                {% endif %}
-            </div>
+            {% if not isHydroRaindropMfaMethodEnforced() %}
+                <div class="form-group">
+                    {% if user.meta.is_mfa_enabled %}
+                        <a href="/hydro-raindrop/disable" onclick="return confirm('Are you sure?')">Disable Multi Factor Authentication</a>
+                    {% else %}
+                        <a href="/hydro-raindrop/enable">Enable Multi Factor Authentication</a>
+                    {% endif %}
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>

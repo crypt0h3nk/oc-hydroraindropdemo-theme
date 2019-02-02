@@ -1,5 +1,7 @@
 name: Hydro Raindrop Demo
 description: 'A Hydro Raindrop Demo theme based on Demo OctoberCMS theme.'
-author: 'Crypto Henk'
+author: 'Crypto Henk <crypt0h3nk@gmail.com>'
 homepage: 'https://github.com/crypt0h3nk'
 code: ''
+require:
+    - HydroCommunity.Raindrop
